@@ -13,6 +13,9 @@ public class ShowDescriptionAndPrices {
 		Statement stmt = conn.createStatement();
 		ResultSet cursor = stmt.executeQuery("SELECT Description, Price FROM COFFEE WHERE Price > 12.00");
 
+		//Could use this method that we wrote on April 16th:
+		//MetaDataDemo.printResults(cursor);
+
 		while(cursor.next()){
 			System.out.println(cursor.getString("Description") + " " +
 					cursor.getString("Price"));
