@@ -15,4 +15,6 @@ dependencies {
     compile group: 'com.h2database', name: 'h2', version: '1.4.197'
     // https://mvnrepository.com/artifact/mysql/mysql-connector-java
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.46'
+    // https://mvnrepository.com/artifact/org.apache.derby/derby
+    compile group: 'org.apache.derby', name: 'derby', version: '10.14.1.0'
 }

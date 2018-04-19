@@ -57,7 +57,7 @@ public class CreateCoffeeDB
 			try
 			{
 				// Drop the UnpaidOrder table.
-				stmt.execute("DROP TABLE Unpaidorder");
+				stmt.execute("DROP TABLE IF EXISTS Unpaidorder");
 				System.out.println("UnpaidOrder table dropped.");
 			}
 			catch(SQLException ex)
